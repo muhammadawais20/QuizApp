@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <div class="question-top-bar">
+        <div id="question-top-bar-width"></div>
+      </div>
 
-        <div class="question-top-bar"><div id="question-top-bar-width"></div></div>
-
-        <header>
-            <h1 id="totalQuestion">Question 1 of 20</h1>
-            <p class="category" id="category">Entertainment: Board Games</p>
-            <span>*****</span>
-        </header>
-        <main>
-            <section>
-                <h4 id="question">Using the following wireframes, build a quiz interface. Using your comprehension about how the
-                    application functions, construct all applicable tests.</h4>
-                <div class="options">
-                    <button id="option1" class="option">option1</button>
-                    <button id="option2" class="option">option2</button>
-                </div>
-                <div class="options">
-                    <button id="option3" class="option">option3</button>
-                    <button id="option4" class="option">option4</button>
-                </div>
-                <div class="answer">
-                    <h2 id="correct">Correct!</h2>
-                    <h2 id="sorry">Wrong!</h2>
-                    <h2 id="quiz-completed"></h2>
-                    <button class="next-question" id="next-question">Next Question</button>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="score">
-                <p id="score">Score 0%</p>
-                <p id="max-score">Max Score 80%</p>
+      <header>
+        <h1 id="totalQuestion">Question 1 of 20</h1>
+        <p class="category" id="category">Entertainment: Board Games</p>
+        <span>*****</span>
+      </header>
+      <main>
+        <section>
+          <h4 id="question">
+            Using the following wireframes, build a quiz interface. Using your
+            comprehension about how the application functions, construct all
+            applicable tests.
+          </h4>
+          <div class="options">
+            <button id="option1" class="option">option1</button>
+            <button id="option2" class="option">option2</button>
+          </div>
+          <div class="options">
+            <button id="option3" class="option">option3</button>
+            <button id="option4" class="option">option4</button>
+          </div>
+          <div class="answer">
+            <h2 id="correct">Correct!</h2>
+            <h2 id="sorry">Sorry!</h2>
+            <h2 id="quiz-completed"></h2>
+            <button class="next-question" id="next-question">
+              Next Question
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="score">
+          <p id="score">Score 0%</p>
+          <p id="max-score">Max Score 100%</p>
+        </div>
+        <div class="score-bar" id="score-bar">
+          <div id="max-score-bar-width">
+            <div id="score-bar-width">
+              <div id="min-score-bar-width">
+                <span></span>
+              </div>
             </div>
-            <div class="score-bar" id="score-bar"><div id="max-score-bar-width"><div id="score-bar-width"></div></div></div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
